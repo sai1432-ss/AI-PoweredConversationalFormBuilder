@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: form-architect-backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./backend/.env
+    healthcheck:
+      # Verifies the server is up and responding
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - form-network
+
+  frontend:
+    build: ./frontend
+    container_name: form-architect-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - form-network
+
+networks:
+  form-network:
+    driver: bridge

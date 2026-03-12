@@ -1,0 +1,41 @@
+/* Styling RJSF Fields to match the Modern UI */
+.rjsf-modern-wrapper label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  color: #475569; /* Slate-600 */
+  letter-spacing: -0.01em;
+}
+
+.rjsf-modern-wrapper input, 
+.rjsf-modern-wrapper select, 
+.rjsf-modern-wrapper textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  background-color: #F8FAFC;
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.rjsf-modern-wrapper input:focus {
+  background-color: white;
+  border-color: #6366F1; /* Indigo-500 */
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+  outline: none;
+}
+
+.rjsf-modern-wrapper button[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background: #4F46E5;
+  color: white;
+  border-radius: 14px;
+  font-weight: 800;
+  margin-top: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
