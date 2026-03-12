@@ -25,7 +25,7 @@ AI Form Architect is a full-stack platform that transforms natural language prom
 
 ### **Backend**
 * **Node.js + Express**
-* **Google Generative AI (Gemini):** Core LLM engine.
+* **GROQ AI:** Core LLM engine.
 * **Ajv:** JSON Schema validation.
 * **Deep-Diff:** Calculation of architectural changes.
 
@@ -36,14 +36,14 @@ AI Form Architect is a full-stack platform that transforms natural language prom
 ### **Prerequisites**
 * [Node.js](https://nodejs.org/) (v18+)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) (For containerized setup)
-* [Google Gemini API Key](https://aistudio.google.com/)
+* [GROQ API Key](https://console.groq.com/keys)
 
 ### **Manual Local Setup**
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/yourusername/ai-form-builder.git](https://github.com/yourusername/ai-form-builder.git)
-    cd ai-form-builder
+    git clone https://github.com/sai1432-ss/AI-PoweredConversationalFormBuilder
+    cd AI-PoweredConversationalFormBuilder
     ```
 
 
@@ -80,3 +80,4 @@ This project is fully containerized with healthchecks and orchestrated networkin
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
